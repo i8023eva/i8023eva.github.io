@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-07T12:48:25.098Z</updated>
+  <updated>2018-03-22T13:22:14.770Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2018/03/05/%E4%B8%80%E4%BB%BD%E7%AE%80%E5%8E%86/"/>
     <id>http://yoursite.com/2018/03/05/一份简历/</id>
     <published>2018-03-05T14:21:09.000Z</published>
-    <updated>2018-03-07T12:48:25.098Z</updated>
+    <updated>2018-03-22T13:22:14.770Z</updated>
     
-    <content type="html"><![CDATA[<p>　 <a id="more"></a></p><h1 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h1><hr><h1 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h1><hr><h1 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h1><ul><li style="list-style: none"><input type="checkbox" checked> Objctive-C</li></ul><hr><h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><hr><h1 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h1><p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p>]]></content>
+    <content type="html"><![CDATA[<p>　 <a id="more"></a></p><h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p><code>手机</code>：15666428758　　　<code>Email</code>：<a href="mailto:i8023eva@163.com" target="_blank" rel="noopener">i8023eva@163.com</a></p><h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><blockquote><p>李元华/男/1994　　青岛市黄岛区　　本科/德州学院计算机系</p></blockquote><ul><li>期望职位：系统管理员</li></ul><h2 id="项目经历"><a href="#项目经历" class="headerlink" title="项目经历"></a>项目经历</h2><h4 id="基于-java-web-的网站开发"><a href="#基于-java-web-的网站开发" class="headerlink" title="基于 java web 的网站开发"></a>基于 java web 的网站开发</h4><p>在校期间参与过 java web 开发，主要有学生信息管理系统和网上书城，熟悉 Servlet 和 JSP 的工作原理和生命周期，了解 MVC 架构模式。</p><h4 id="基于-Objective-C-的-APP-开发"><a href="#基于-Objective-C-的-APP-开发" class="headerlink" title="基于 Objective-C 的 APP 开发"></a>基于 Objective-C 的 APP 开发</h4><p>使用 Chales 抓取数据接口，参照微博开发文档，模拟过微博相关功能。在做 UI 的过程中要考虑到用户体验，使用了部分自定义控件，掌握了 JSON 解析和数据归档方面技术。</p><h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>使用 CMS 搭建过个人网站，熟悉网站后台的管理与维护。<br><em>基于 GitHub Pages 的个人博客：</em><code>http://i8023eva.github.io/</code><br>建立过个人微信公众平台，建立了简单的小程序案例。<br><em>公众号：</em><code>i8023eva</code></p><h2 id="工作期望-amp-个人评价"><a href="#工作期望-amp-个人评价" class="headerlink" title="工作期望&amp;个人评价"></a>工作期望&amp;个人评价</h2><p>我认为工作就要高效完成自己的本职工作，与其他同事互相交流学习，互相提升。在遇到技术问题时我往往会去百度、Stack over flow上寻找答案，熟练地阅读手册、规范去解决问题。要保持自己的视野，了解最新信息。有驾照但是没开过车。</p><h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p>]]></content>
     
     <summary type="html">
     
