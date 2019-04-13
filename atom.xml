@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-11T04:30:54.559Z</updated>
+  <updated>2019-04-13T12:55:10.124Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>一份简历</title>
-    <link href="http://yoursite.com/2018/03/05/%E4%B8%80%E4%BB%BD%E7%AE%80%E5%8E%86/"/>
-    <id>http://yoursite.com/2018/03/05/一份简历/</id>
+    <title>Me？</title>
+    <link href="http://yoursite.com/2018/03/05/README/"/>
+    <id>http://yoursite.com/2018/03/05/README/</id>
     <published>2018-03-05T14:21:09.000Z</published>
-    <updated>2019-03-11T04:30:54.559Z</updated>
+    <updated>2019-04-13T12:55:10.124Z</updated>
     
-    <content type="html"><![CDATA[<p>　 <a id="more"></a></p><h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><p><code>手机</code>：15666428758　　　<code>Email</code>：<a href="mailto:i8023eva@163.com" target="_blank" rel="noopener">i8023eva@163.com</a></p><h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><blockquote><p>李元华/男/1994　　青岛市黄岛区　　16本科/德州学院计算机系</p></blockquote><h2 id="相关技能"><a href="#相关技能" class="headerlink" title="相关技能"></a>相关技能</h2><p>Objective-C  &amp;&amp;  Swift  </p><p><a href="https://github.com/i8023eva" target="_blank" rel="noopener">https://github.com/i8023eva</a></p><h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>感谢您花时间阅读我的简历，期待能有机会和您共事。</p>]]></content>
+    <content type="html"><![CDATA[<p>　 <a id="more"></a></p><p><code>Email</code>：<a href="mailto:i8023eva@163.com" target="_blank" rel="noopener">i8023eva@163.com</a></p><p>Objective-C  &amp;&amp;  Swift  </p><p><a href="https://github.com/i8023eva" target="_blank" rel="noopener">https://github.com/i8023eva</a></p>]]></content>
     
     <summary type="html">
     
