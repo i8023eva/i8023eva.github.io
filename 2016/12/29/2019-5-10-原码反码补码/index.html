@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="i8023eva">
+    <meta name="keyword" content="i8023eva">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        原码反码补码 - i8023eva的博客 | i8023eva&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> alt+shift+k =  </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/avatar.jpg">
+        </div>
+        <div class="name">
+            <i>L</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li>
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-原码"><span class="toc-text">1. 原码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-反码"><span class="toc-text">2. 反码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-补码"><span class="toc-text">3. 补码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-补码的算术运算"><span class="toc-text">3.1 补码的算术运算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-1-溢出问题"><span class="toc-text">3.1.1 溢出问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-补码的说明"><span class="toc-text">3.2 补码的说明</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-1-特殊数-10000000"><span class="toc-text">3.2.1 特殊数 10000000</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-2-关于模"><span class="toc-text">3.2.2 关于模</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-3-128的补码"><span class="toc-text">3.2.3 -128的补码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-补码转换为十进制"><span class="toc-text">3.3 补码转换为十进制</span></a></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input">
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> alt+shift+k =  </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        原码反码补码
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2016-12-29 17:31:57</span></span>
+        
+        
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+
+    </div>
+    <div class="post-content ">
+        <blockquote>
+</blockquote>
+<p>$正数^原 = 正数^反 = 正数^补$<br>$负数^反 = 负数^原$符号位不变,其余按位取反<br>$负数^补 = 负数^反$+1</p>
+<h1 id="1-原码"><a href="#1-原码" class="headerlink" title="1. 原码"></a>1. 原码</h1><p>0按8位来看<br>$[+0]^原 = 0　0000000$<br>$[-0]^原 = 1　0000000$<br>0的原码表示不唯一</p>
+<h1 id="2-反码"><a href="#2-反码" class="headerlink" title="2. 反码"></a>2. 反码</h1><p>$[+0]^反 = 0　0000000$<br>$[-0]^反 = 1　1111111$<br>0的反码表示也是不唯一的</p>
+<h1 id="3-补码"><a href="#3-补码" class="headerlink" title="3. 补码"></a>3. 补码</h1><p>$[+0]^补 = 0　0000000$<br>$[-0]^补 = [-0]^反 + 1 = 1,0000,0000$<br>对于8位字长,进位的1溢出,我们只能看到8个0,这就和+0是一样的.  </p>
+<blockquote>
+<p>补码解决了0的表示不唯一的问题.</p>
+</blockquote>
+<h2 id="3-1-补码的算术运算"><a href="#3-1-补码的算术运算" class="headerlink" title="3.1 补码的算术运算"></a>3.1 补码的算术运算</h2><blockquote>
+<p>通过引进补码,可将减法运算转换为加法运算.</p>
+</blockquote>
+<p>$[X+Y]^补 = [X]^补 + [Y]^补$<br>$[X-Y]^补 = [X+(-Y)]^补 = [X]^补 + [-Y]^补$</p>
+<p><em>例1</em>　66 - 51 = 66 + (-51) = 15</p>
+<p>用二进制补码运算 :<br>$[+66]^补 = [+66]^原 = 01000010$<br>$[-51]^原 = 1　0110011$<br>$[-51]^补 = 1　1001101$<br>$[+66]^补 + [-51]^补 = 1，0000，1111$<br>$=15$  </p>
+<p><em>例2</em>　X = -52 = -0110100, Y = 116 = +1110100, 求 X + Y = ?</p>
+<p>$[X]^原 = 10110100$<br>$[X]^补 = 11001100$<br>$[Y]^补 = 01110100$<br>$[X + Y]^补 = 01000000$<br>X + Y = +1000000</p>
+<h3 id="3-1-1-溢出问题"><a href="#3-1-1-溢出问题" class="headerlink" title="3.1.1 溢出问题"></a>3.1.1 溢出问题</h3><blockquote>
+<p>除法运算溢出时,产生’除数为0’中断<br>乘法运算无溢出问题</p>
+</blockquote>
+<p><em>例3</em> 若 : X = 0111 1000, Y = 0110 1001　则 : X + Y = 1110 0001</p>
+<p>如果是有符号数,次高位向最高位有进位, 而最高位向前无进位,产生溢出(两个正数相加变成负数).<br>如果是无符号数,就不算溢出,因为最高位向更高位没有进位.</p>
+<h2 id="3-2-补码的说明"><a href="#3-2-补码的说明" class="headerlink" title="3.2 补码的说明"></a>3.2 补码的说明</h2><blockquote>
+<p>正数不变,负数即用模减去绝对值.</p>
+</blockquote>
+<h3 id="3-2-1-特殊数-10000000"><a href="#3-2-1-特殊数-10000000" class="headerlink" title="3.2.1 特殊数 10000000"></a>3.2.1 特殊数 10000000</h3><p>对无符号数 :<br>$(10000000)_B = 128$<br>在原码中定义为 :<br>$(10000000)_B = -0$<br>在反码中定义为 :<br>$(10000000)_B = -127$<br>在补码中定义为 :<br>$(10000000)_B = -128$</p>
+<h3 id="3-2-2-关于模"><a href="#3-2-2-关于模" class="headerlink" title="3.2.2 关于模"></a>3.2.2 关于模</h3><p>说一个钟表的例子:<br>　将指针从5点拨到1点;<br>　两种拨法:<br>　　逆时针: 5 - 4 = 1;<br>　　顺时针: 5 + 8 = 12 + 1 = 1;<br>　这是模12:<br>　　5 - 4 = 5 + 8 → 8为4的补数<br>　　$[-4]^补 = 12 - 4 = 8$</p>
+<blockquote>
+<p>二进制下，有多少位数参加运算,模就是在 1 的后面加上多少个 0.</p>
+</blockquote>
+<h3 id="3-2-3-128的补码"><a href="#3-2-3-128的补码" class="headerlink" title="3.2.3 -128的补码"></a>3.2.3 -128的补码</h3><table>
+<thead>
+<tr>
+<th>有符号</th>
+<th>无符号</th>
+<th>二进制补码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> 0</td>
+<td>0</td>
+<td>0000 0000</td>
+</tr>
+<tr>
+<td> 1</td>
+<td>1</td>
+<td>0000 0001</td>
+</tr>
+<tr>
+<td> …</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td> 127</td>
+<td>127</td>
+<td>0111 1111</td>
+</tr>
+</tbody>
+</table>
+<p>有符号的从这里开始变化  </p>
+<table>
+<thead>
+<tr>
+<th>-128</th>
+<th>128</th>
+<th>1000 0000</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> -127</td>
+<td>129</td>
+<td>1000 0001</td>
+</tr>
+<tr>
+<td> …</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td> -1</td>
+<td>255</td>
+<td>1111 1111</td>
+</tr>
+<tr>
+<td> 0</td>
+<td>0</td>
+<td>0000 0000</td>
+</tr>
+</tbody>
+</table>
+<p>补码没有+0/-0之分,所以这个特殊的数就用-128来表示.<br>就像钟表例子一样,这就是一个环,超出之后其实又从0开始计算超出的部分.</p>
+<p>用模来算的话 :<br>八位二进制的模 : 1 0000 0000;<br>-128的绝对值 : 1 000 0000<br>-128的补码 : 10000 0000 - 1000 0000 = 1000 0000  </p>
+<p>负数的补码等于反码加一<br>=&gt; 1 0000 0000 - 1000 0000<br>=&gt; (1111 1111 - 0000 0001) - 1000 0000<br>=&gt; 1111 1111 - 1000 0000 + 1<br>=&gt; 0111 1111 + 1  </p>
+<h2 id="3-3-补码转换为十进制"><a href="#3-3-补码转换为十进制" class="headerlink" title="3.3 补码转换为十进制"></a>3.3 补码转换为十进制</h2><p>负数 =&gt; 对补码再取补  </p>
+<p>$[X]^补 = 1101 0010$<br>$X = [[X]^补]^补 = [1101 0010]^补 = 1010 1110 = -46$  </p>
+<hr>
+<p>B , Binary (二进制);<br>H , Hex (十六进制);<br>O , Octal (八进制);<br>D , Decimal (十进制).</p>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">赞赏</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <br>
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank" href="https://github.com/i8023eva">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <!--<span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>-->
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+</html>
